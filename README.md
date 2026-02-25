@@ -110,3 +110,14 @@ Basic NLP preprocessing was applied to identify the most frequent words used in 
 ## 👩‍💻 Author
 
 Developed as part of a professional transition into Data Engineering, applying real-world AWS architecture patterns and serverless design principles.
+## 💼 Business Value
+
+This project demonstrates the implementation of a scalable serverless data pipeline capable of:
+
+- Collecting real-time event data
+- Structuring raw event payloads into optimized analytical datasets
+- Applying partitioning strategies for performance optimization
+- Enabling SQL-based exploratory and behavioral analysis
+- Supporting downstream BI and dashboard integrations
+
+The architecture reflects real-world cloud data engineering patterns commonly used in production environments.
