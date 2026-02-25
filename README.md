@@ -64,56 +64,49 @@ s3://enriched-bucket/telegram/context_date=YYYY-MM-DD/
 
 ---
 
-## 📊 Analytical Capabilities
+## 📊 Analytical Results
 
-Available queries include:
-
-- Messages per day
-- Messages per user per day
-- Average message length
-- Temporal analysis (hour / weekday / week number)
-- Word frequency ranking
-
-SQL scripts available at:
-
-```
-sql/03_analytics_queries.sql
-```
+After processing and structuring the Telegram data lake, analytical queries were executed in Amazon Athena to extract behavioral insights from the group activity.
 
 ---
 
-## ⚙️ Technologies Used
+### 📈 Message Volume per Day
 
-- AWS S3
-- AWS Lambda
-- AWS EventBridge
-- AWS API Gateway
-- Amazon Athena
-- Python
-- PyArrow
-- SQL
+![Messages per Day](docs/images/messages_per_day.png)
+
+This metric shows daily activity distribution and highlights peak engagement days.
 
 ---
 
-## 🔐 Security & Best Practices
+### 👤 Messages per User
 
-- No credentials stored in repository
-- Environment variables used for configuration
-- No sensitive production data included
-- Modularized ETL logic
+![Messages per User](docs/images/messages_per_user.png)
 
----
-
-## 📈 Future Improvements
-
-- Infrastructure as Code (Terraform)
-- AWS Glue Catalog integration
-- Dashboard layer (Power BI / Looker)
-- Data quality validation layer
-- Automated partition discovery
+User participation distribution helps identify the most active contributors.
 
 ---
 
+### 🧠 Average Message Length
+
+![Average Message Length](docs/images/avg_message_length.png)
+
+This metric reveals communication patterns and message depth per user.
+
+---
+
+### ⏰ Temporal Activity Distribution
+
+![Temporal Analysis](docs/images/temporal_analysis.png)
+
+Hourly and weekday analysis shows engagement peaks across time periods.
+
+---
+
+### 🔤 Word Frequency Analysis
+
+![Word Frequency](docs/images/word_frequency.png)
+
+Basic NLP preprocessing was applied to identify the most frequent words used in the group.
 ## 👩‍💻 Author
 
 Developed as part of a professional transition into Data Engineering, applying real-world AWS architecture patterns and serverless design principles.
